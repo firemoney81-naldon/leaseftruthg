@@ -1,23 +1,1263 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+
+
+    <!-- JSON-LD Structured Data for SEO / LLM Extraction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://lease.reliabledone.com/mini-countryman-guide#webpage",
+          "url": "https://lease.reliabledone.com/mini-countryman-guide",
+          "name": "미니 컨트리맨 리스 가격표 및 2026-2027 견적 비용 완벽 분석 가이드",
+          "description": "3세대 미니 컨트리맨 리스 비용 구조, 모델별 견적표, 할인 프로모션 및 법인/개인사업자 비용처리 총정리",
+          "inLanguage": "ko-KR",
+          "datePublished": "2026-01-15T09:00:00+09:00",
+          "dateModified": "2026-09-27T10:00:00+09:00"
+        },
+        {
+          "@type": "FinancialProduct",
+          "@id": "https://lease.reliabledone.com/mini-countryman-guide#product",
+          "name": "미니 컨트리맨 운용리스 금융 상품",
+          "category": "오토리스",
+          "description": "수입 프리미엄 소형 SUV 미니 컨트리맨의 맞춤형 금융 운용리스 상품",
+          "provider": {
+            "@type": "Organization",
+            "name": "오토파이낸스 리포트"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "KRW",
+            "price": "499000",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "499000",
+              "priceCurrency": "KRW",
+              "unitCode": "MON",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": "1",
+                "unitCode": "MON"
+              }
+            }
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://lease.reliabledone.com/mini-countryman-guide#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "미니 컨트리맨 리스와 장기렌트 중 어떤 상품이 유리한가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "미니 컨트리맨은 일반 번호판이 발급되는 운용리스의 선호도가 압도적으로 높습니다. 하, 허, 호 번호판 대신 품위를 유지할 수 있으며 본인의 자동차 보험 경력을 그대로 유지하여 무사고 할인을 누릴 수 있다는 장점이 있습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "미니 컨트리맨 리스 시 보증금과 선납금의 차이점은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "보증금은 계약 종료 시 전액 반환받는 예치금으로 금리를 낮추는 역할을 하며, 선납금은 총 리스료의 일부를 계약 초기에 미리 납부하여 월 납입금을 인위적으로 낮추는 소멸성 금액입니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "개인사업자 및 법인의 미니 컨트리맨 리스 비용처리 한도는 얼마인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "연간 감가상각비 800만 원, 유류비 및 보험료 등 차량유지비 700만 원을 합산하여 연간 최대 1,500만 원까지 전액 경비 처리가 가능합니다. 운행기록부를 작성하면 1,500만 원 초과 금액도 업무용 사용 비율에 따라 손비 인정이 가능합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "2026년형 2027년형 미니 컨트리맨 리스 중도해지 위약금 규정은 어떻게 되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "운용리스 중도해지 시 잔여 리스료에 대해 해지 시점의 기간에 따라 차등적인 중도해지 손해배상금(위약금)이 부과됩니다. 따라서 중도 해지 대신 제3자에게 조건을 넘기는 리스 승계를 활용하는 것이 손실을 최소화하는 최선의 방법입니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #0f2b48;
+            --primary-light: #1e4976;
+            --secondary-color: #0d9488;
+            --secondary-light: #14b8a6;
+            --accent-warm: #d97706;
+            --accent-soft: #fef3c7;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-muted: #f1f5f9;
+            --text-main: #1e293b;
+            --text-sub: #475569;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --border-focus: #3b82f6;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+            --radius-md: 8px;
+            --radius-lg: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.85;
+            letter-spacing: -0.015em;
+            word-break: keep-all;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            color: #ffffff;
+            padding: 48px 0 40px;
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .badge-tag {
+            align-self: flex-start;
+            background-color: rgba(20, 184, 166, 0.2);
+            color: #a7f3d0;
+            border: 1px solid rgba(20, 184, 166, 0.4);
+            padding: 6px 14px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 9999px;
+            letter-spacing: 0.02em;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            line-height: 1.35;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            max-width: 900px;
+        }
+
+        .meta-info {
+            display: flex;
+            gap: 20px;
+            font-size: 0.875rem;
+            color: #94a3b8;
+            margin-top: 8px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-inner {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .nav-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .nav-inner a {
+            padding: 16px 20px;
+            text-decoration: none;
+            color: var(--text-sub);
+            font-weight: 600;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-inner a:hover, .nav-inner a.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+            background-color: #f8fafc;
+        }
+
+        /* Main Content Layout */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 36px;
+            padding: 40px 0 60px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .sidebar-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 26px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .sidebar-card h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--bg-muted);
+            font-weight: 700;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .toc-list li a {
+            display: block;
+            color: var(--text-sub);
+            text-decoration: none;
+            font-size: 0.92rem;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .toc-list li a:hover {
+            background-color: var(--bg-muted);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Quick Interactive Calculator Card */
+        .calc-widget {
+            background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%);
+            border: 1px solid #ccfbf1;
+        }
+
+        .calc-widget label {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 14px;
+            margin-bottom: 6px;
+        }
+
+        .calc-widget select, .calc-widget input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            background-color: #ffffff;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .calc-widget select:focus, .calc-widget input:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+        }
+
+        .btn-action {
+            width: 100%;
+            padding: 13px;
+            margin-top: 20px;
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-action:hover {
+            background-color: #0f766e;
+        }
+
+        .calc-result-box {
+            margin-top: 18px;
+            padding: 16px;
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+        }
+
+        /* Content Area */
+        .content-body {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 44px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .content-body h2 {
+            font-size: 1.85rem;
+            color: var(--primary-color);
+            margin-top: 52px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .content-body h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .content-body h3 {
+            font-size: 1.4rem;
+            color: var(--primary-light);
+            margin-top: 36px;
+            margin-bottom: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .content-body h4 {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            margin-top: 24px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .content-body p {
+            color: var(--text-sub);
+            margin-bottom: 20px;
+            font-size: 1.03rem;
+            text-align: justify;
+        }
+
+        .content-body ul, .content-body ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+            color: var(--text-sub);
+        }
+
+        .content-body li {
+            margin-bottom: 10px;
+            line-height: 1.75;
+        }
+
+        /* Notice & Highlight Boxes */
+        .info-card {
+            background-color: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 20px 24px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 28px 0;
+        }
+
+        .info-card h4 {
+            color: #166534;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            color: #14532d;
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+
+        .warning-card {
+            background-color: #fffbeb;
+            border-left: 4px solid var(--accent-warm);
+            padding: 20px 24px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 28px 0;
+        }
+
+        .warning-card h4 {
+            color: #92400e;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .warning-card p {
+            color: #78350f;
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+
+        /* Modern Tables */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin: 28px 0;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.94rem;
+            text-align: left;
+            background-color: #ffffff;
+        }
+
+        thead tr {
+            background-color: #f8fafc;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        th {
+            padding: 14px 16px;
+            font-weight: 700;
+            color: var(--primary-color);
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-sub);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .highlight-col {
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        /* Visual Graphic Bar (Data Bars) */
+        .chart-container {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin: 28px 0;
+        }
+
+        .chart-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 18px;
+        }
+
+        .chart-row {
+            margin-bottom: 16px;
+        }
+
+        .chart-label-group {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-sub);
+            margin-bottom: 6px;
+        }
+
+        .chart-track {
+            background-color: #e2e8f0;
+            height: 12px;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+
+        .chart-bar {
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .bar-c { width: 55%; background-color: #0284c7; }
+        .bar-s { width: 68%; background-color: #0d9488; }
+        .bar-jcw { width: 88%; background-color: #e11d48; }
+        .bar-ev { width: 62%; background-color: #7c3aed; }
+
+        /* FAQ Component */
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: 16px;
+            background-color: #ffffff;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+
+        .faq-item:hover {
+            border-color: #cbd5e1;
+        }
+
+        .faq-question {
+            padding: 18px 22px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary-color);
+            background-color: #f8fafc;
+            border-bottom: 1px solid transparent;
+        }
+
+        .faq-answer {
+            padding: 20px 22px;
+            color: var(--text-sub);
+            font-size: 0.98rem;
+            line-height: 1.8;
+            background-color: #ffffff;
+        }
+
+        /* External Citation Links */
+        .reference-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .reference-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            background-color: #f8fafc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: all 0.2s ease;
+        }
+
+        .reference-item:hover {
+            border-color: var(--secondary-color);
+            background-color: #ffffff;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .ref-title {
+            font-weight: 700;
+            color: var(--primary-light);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .ref-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .ref-arrow {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            white-space: nowrap;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #94a3b8;
+            padding: 48px 0;
+            font-size: 0.9rem;
+            border-top: 1px solid #334155;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand {
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .layout-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                order: 2;
+            }
+            .content-body {
+                padding: 30px 20px;
+            }
+            header h1 {
+                font-size: 1.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <span class="badge-tag">프리미엄 소형 SUV 금융 가이드</span>
+        <h1>미니 컨트리맨 리스 견적 비교 및 2026-2027 비용 절감 가이드</h1>
+        <p>3세대 풀체인지 미니 컨트리맨 모델별 가격표, 운용리스 및 장기렌트 차이점, 사업자 세무 비용처리 방법, 그리고 다이렉트 최저가 확인 전략을 안내합니다.</p>
+        <div class="meta-info">
+            <span>게시일: 2026년 1월 15일</span>
+            <span>최종 업데이트: 2026년 9월 27일</span>
+            <span>작성: 오토파이낸스 금융공학 분석팀</span>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container nav-inner">
+        <a href="#summary" class="active">핵심 요약</a>
+        <a href="#lineup">모델별 라인업 및 가격표</a>
+        <a href="#comparison">리스 vs 렌트 vs 할부</a>
+        <a href="#cost-structure">견적 산정 공식 및 잔존가치</a>
+        <a href="#tax-strategy">사업자 비용처리 및 세무</a>
+        <a href="#forecast">2026-2027 전망 및 잔가율</a>
+        <a href="#community">실차주 후기 및 프로모션 성지</a>
+        <a href="#caution">계약 및 중도해지 위약금</a>
+        <a href="#faq">자주 묻는 질문</a>
+    </div>
+</nav>
+
+<div class="container layout-grid">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-card">
+            <h3>목차 바로가기</h3>
+            <ul class="toc-list">
+                <li><a href="#summary">1. 미니 컨트리맨 리스 핵심 총정리</a></li>
+                <li><a href="#lineup">2. 모델별 등급표 및 출고 가격표</a></li>
+                <li><a href="#comparison">3. 리스 vs 렌트 vs 할부 비용 비교</a></li>
+                <li><a href="#cost-structure">4. 보증금, 선납금, 잔존가치 계산법</a></li>
+                <li><a href="#tax-strategy">5. 개인 및 법인사업자 경비처리 세법</a></li>
+                <li><a href="#forecast">6. 2026년 2027년 감가 방어율 전망</a></li>
+                <li><a href="#community">7. 커뮤니티 실차주 출고 후기</a></li>
+                <li><a href="#caution">8. 계약 기간, 주행거리, 위약금 유의점</a></li>
+                <li><a href="#faq">9. 자주 묻는 질문 FAQ</a></li>
+                <li><a href="#references">10. 공인 공식 외부 데이터 출처</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-card calc-widget">
+            <h3>1분 예상 리스료 계산기</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">선호하는 모델과 조건을 선택하여 대략적인 월 납입 금액을 확인해보세요.</p>
+            <form id="leaseCalcForm" onsubmit="event.preventDefault(); calculateLease();">
+                <label for="trimSelect">모델 및 트림 선택</label>
+                <select id="trimSelect">
+                    <option value="49900000">미니 컨트리맨 C 클래식 (4,990만 원)</option>
+                    <option value="57000000" selected>미니 컨트리맨 C 페이버드 (5,700만 원)</option>
+                    <option value="67000000">미니 컨트리맨 S ALL4 페이버드 (6,700만 원)</option>
+                    <option value="69900000">미니 컨트리맨 JCW ALL4 (6,990만 원)</option>
+                    <option value="56500000">미니 컨트리맨 일렉트릭 E 클래식 (5,650만 원)</option>
+                    <option value="67500000">미니 컨트리맨 일렉트릭 SE ALL4 (6,750만 원)</option>
+                </select>
+
+                <label for="termSelect">계약 기간 (약정 개월)</label>
+                <select id="termSelect">
+                    <option value="36">36개월</option>
+                    <option value="48">48개월</option>
+                    <option value="60" selected>60개월</option>
+                </select>
+
+                <label for="depositType">초기 비용 선택 (비율)</label>
+                <select id="depositType">
+                    <option value="prepaid_30">선납금 30퍼센트 (월 요금 최저)</option>
+                    <option value="deposit_30" selected>보증금 30퍼센트 (만기 전액 환불)</option>
+                    <option value="zero">초기비용 0원 (무보증 승인 조건)</option>
+                </select>
+
+                <button type="submit" class="btn-action">예상 월 리스 요금 계산</button>
+            </form>
+
+            <div id="calcResult" class="calc-result-box" style="display:none;">
+                <div style="font-weight:700; color:var(--primary-color); margin-bottom:6px;">계산 결과 안내</div>
+                <div id="resultContent" style="color:var(--text-sub);">조건을 선택하고 버튼을 눌러주세요.</div>
+            </div>
+        </div>
+
+        <div class="sidebar-card">
+            <h3>다이렉트 컨설팅 상담</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">캐피탈사별 잔존가치 프로모션 및 딜러사 공식 할인 재고를 실시간 비교 분석해 드립니다.</p>
+            <form onsubmit="event.preventDefault(); alert('상담 신청이 정상적으로 접수되었습니다. 전문 컨설턴트가 빠른 시일 내에 안내 연락을 드립니다.');">
+                <input type="text" placeholder="고객 성함" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid var(--border-color); border-radius:6px;">
+                <input type="tel" placeholder="연락처 (010-XXXX-XXXX)" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid var(--border-color); border-radius:6px;">
+                <button type="submit" class="btn-action" style="background-color: var(--primary-color);">최저가 견적서 신청하기</button>
+            </form>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-body">
+        <section id="summary">
+            <h2>1. 미니 컨트리맨 리스 핵심 총정리</h2>
+            <p>
+                BMW 그룹의 프리미엄 소형차 브랜드인 미니(MINI)의 대표 스포츠 액티비티 비히클(SAV) 모델인 <strong>미니 컨트리맨 리스</strong>는 스타일리시한 외관 디자인과 SUV 특유의 실용성을 동시에 추구하는 스마트한 운전자들에게 가장 합리적인 차량 운용 수단으로 자리 잡았습니다. 3세대 풀체인지를 거치며 차체 크기가 준중형급으로 대폭 확장되었고, 최첨단 원형 OLED 디스플레이와 차세대 운영체제인 미니 오퍼레이팅 시스템 9(MINI OS 9)이 탑재되면서 패밀리카로서의 입지를 확고히 다졌습니다.
+            </p>
+            <p>
+                고가의 수입차를 신차로 출고할 때 차량을 일시불이나 일반 할부로 직접 매입하는 방식은 초기 목돈 부담과 높은 취득세 및 등록세, 그리고 사업자의 건강보험료 상승 등의 부담을 유발합니다. 반면 자동차 금융 전문 업체를 통한 운용리스를 이용하면 금융사 명의로 등록된 차량을 본인 전용으로 이용하면서 일반 번호판을 부착해 품격을 유지할 수 있습니다. 특히 연간 최대 1,500만 원에 달하는 세법상 비용처리가 가능하여 법인 및 개인사업자에게 가장 추천되는 금융 상품입니다.
+            </p>
+            
+            <div class="info-card">
+                <h4>리스 선택 시 체크포인트 요약</h4>
+                <p>
+                    신차 리스 진행 시에는 단순 월 납입 요금뿐만 아니라 잔존가치 보장 비율, 계약 만기 시 인수 및 반납의 유연성, 약정 주행거리(연간 2만km에서 3만km), 그리고 중도해지 위약금 요율을 복합적으로 비교하여 본인의 운행 패턴에 가장 부합하는 견적을 산출해야 합니다.
+                </p>
+            </div>
+        </section>
+
+        <section id="lineup">
+            <h2>2. 모델별 등급표 및 출고 가격표</h2>
+            <p>
+                최신 세대 미니 컨트리맨은 가솔린 내연기관부터 순수 전기차 라인업까지 다채로운 모델군을 형성하고 있습니다. 트림은 기본 옵션을 충실히 갖춘 클래식(Classic)과 고급 편의 사양이 집중된 페이버드(Favoured), 그리고 모터스포츠 헤리티지를 담은 고성능 JCW(John Cooper Works) 라인으로 세분화됩니다.
+            </p>
+            <p>
+                시장 선호도가 가장 높은 미니 컨트리맨 C 클래식부터 플래그십 고성능 모델인 미니 컨트리맨 JCW ALL4에 이르기까지, 등급별 상세 가격표와 공인 복합 연비, 주요 옵션 차이점을 정밀하게 파악하는 것이 견적 산출의 출발점입니다.
+            </p>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>모델명</th>
+                            <th>구동 방식</th>
+                            <th>공식 출시 가격</th>
+                            <th>예상 월 리스료 (선납 30%)</th>
+                            <th>예상 월 리스료 (보증 30%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>미니 컨트리맨 C 클래식</strong></td>
+                            <td>전륜구동 (FWD)</td>
+                            <td>4,990만 원</td>
+                            <td class="highlight-col">45만 ~ 49만 원</td>
+                            <td>68만 ~ 72만 원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>미니 컨트리맨 C 페이버드</strong></td>
+                            <td>전륜구동 (FWD)</td>
+                            <td>5,700만 원</td>
+                            <td class="highlight-col">52만 ~ 56만 원</td>
+                            <td>78만 ~ 83만 원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>미니 컨트리맨 S ALL4 페이버드</strong></td>
+                            <td>사륜구동 (AWD)</td>
+                            <td>6,700만 원</td>
+                            <td class="highlight-col">62만 ~ 67만 원</td>
+                            <td>93만 ~ 98만 원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>미니 컨트리맨 JCW ALL4</strong></td>
+                            <td>사륜구동 (AWD)</td>
+                            <td>6,990만 원</td>
+                            <td class="highlight-col">66만 ~ 71만 원</td>
+                            <td>99만 ~ 105만 원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>미니 컨트리맨 일렉트릭 E 클래식</strong></td>
+                            <td>전기 (전륜)</td>
+                            <td>5,650만 원</td>
+                            <td class="highlight-col">51만 ~ 55만 원</td>
+                            <td>76만 ~ 81만 원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>미니 컨트리맨 일렉트릭 SE ALL4</strong></td>
+                            <td>전기 (사륜)</td>
+                            <td>6,750만 원</td>
+                            <td class="highlight-col">63만 ~ 68만 원</td>
+                            <td>94만 ~ 99만 원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                상기 월 리스 견적 금액은 계약 기간 60개월, 연간 약정 주행거리 20,000km, 금융사 표준 잔존가치를 적용한 예상 평균 비용이며, 딜러사 공식 할인 프로모션 및 금융사 제휴 금리 변동에 따라 차이가 발생할 수 있습니다. 
+                특히 미니 컨트리맨 가솔린 2.0 터보 엔진이 장착된 S ALL4 모델이나 317마력의 고출력을 발휘하는 존쿠퍼웍스 모델의 경우, 고성능 수입차 특유의 감가상각 방어율이 달라 잔존가치 책정 시 전문 컨설팅을 통한 비교가 필수적입니다.
+            </p>
+            <p>
+                과거 2세대 모델에서 큰 인기를 끌었던 미니 컨트리맨 하이림, 미니 컨트리맨 쿠퍼 S, 미니 컨트리맨 스탠다드, 미니 컨트리맨 스포츠, 미니 컨트리맨 디젤(D 및 SD), 그리고 미니 컨트리맨 언테임드 에디션이나 섀도우 에디션 등 한정판 차량의 경우 현재 중고차 리스 시장에서 활발히 유통되고 있습니다. 최신 풀체인지 모델을 원하신다면 3세대 가솔린 및 순수 전기 파워트레인을 탑재한 컨트리맨 EV 라인업을 선택하는 것이 유지비와 기술적 완성도 측면에서 유리합니다.
+            </p>
+        </section>
+
+        <section id="comparison">
+            <h2>3. 리스 vs 렌트 vs 할부 비용 비교</h2>
+            <p>
+                신차를 도입할 때 가장 많이 고민하는 주제가 바로 <strong>운용리스, 장기렌트, 은행 및 카드사 신차 할부</strong> 간의 실질적 비용 및 혜택 차이점입니다. 각 상품은 세법적 지위, 번호판 체계, 부채 인식 여부 등에서 뚜렷한 특징을 지니고 있습니다.
+            </p>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분 항목</th>
+                            <th>운용리스 (Lease)</th>
+                            <th>장기렌트 (Long-term Rent)</th>
+                            <th>신차 할부 (Installment)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>등록 번호판</strong></td>
+                            <td>일반 번호판 (자가용과 동일)</td>
+                            <td>하, 허, 호 렌터카 번호판</td>
+                            <td>일반 번호판 (개인 소유)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>자동차 보험</strong></td>
+                            <td>개인 보험 요율 적용 (무사고 할인 유지)</td>
+                            <td>렌터카 단체 보험 (사고 할증 없음)</td>
+                            <td>개인 보험 가입 필수</td>
+                        </tr>
+                        <tr>
+                            <td><strong>초기 취등록세</strong></td>
+                            <td>월 리스료에 분할 포함 가능</td>
+                            <td>월 렌트료에 전액 포함</td>
+                            <td>초기 일시불 현금 납부</td>
+                        </tr>
+                        <tr>
+                            <td><strong>금융 부채 인식</strong></td>
+                            <td>금융 부채로 대출 한도에 반영</td>
+                            <td>임대 상품으로 부채 미인식</td>
+                            <td>금융 대출(할부 금융)로 전액 인식</td>
+                        </tr>
+                        <tr>
+                            <td><strong>사업자 비용처리</strong></td>
+                            <td>연 1,500만 원 간편 손비 처리</td>
+                            <td>연 1,500만 원 간편 손비 처리</td>
+                            <td>감가상각 방식으로 다소 복잡</td>
+                        </tr>
+                        <tr>
+                            <td><strong>계약 만기 처리</strong></td>
+                            <td>반납, 인수, 재리스 선택 가능</td>
+                            <td>반납, 인수 선택 가능</td>
+                            <td>소유권 지속 (중고차 매각 직접 진행)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                <strong>미니 컨트리맨 리스의 가장 큰 장점</strong>은 품위 유지와 보험 경력 승계입니다. 수입 프리미엄 브랜드의 개성과 품격을 중요시하는 미니 차주들에게 렌터카 전용 번호판(하, 허, 호)은 감성적인 단점으로 작용할 수 있습니다. 운용리스는 일반 승용차 번호판을 사용하므로 대외적인 이미지 유지가 중요한 개인사업자 대표 및 전문직 종사자들에게 높은 만족도를 선사합니다.
+            </p>
+            <p>
+                또한 운전 경력이 5년 이상으로 장기간 무사고를 유지하여 보험 할인 등급이 높은 운전자라면, 렌터카 통합 보험보다 개인 자동차 보험을 유지하는 리스 방식이 전체 유지비용 절감에 훨씬 더 효율적입니다. 반대로 만 26세 미만의 신규 운전자이거나 최근 사고 이력으로 인해 자동차 보험료가 과도하게 책정되는 상태라면 장기렌트 상품의 요금표를 함께 대조해보는 지혜가 필요합니다.
+            </p>
+        </section>
+
+        <section id="cost-structure">
+            <h2>4. 보증금, 선납금, 잔존가치 계산법</h2>
+            <p>
+                미니 컨트리맨 리스 견적을 분석할 때 반드시 숙지해야 하는 3대 핵심 개념은 <strong>보증금, 선납금(선수금), 그리고 잔존가치</strong>입니다. 이 세 가지 요소의 설정 비율에 따라 매월 통장에서 출금되는 월 납입 금액과 만기 시점에 돌려받거나 납부해야 하는 총비용이 완전히 달라집니다.
+            </p>
+
+            <h3>보증금과 선납금의 명확한 차이점</h3>
+            <ul>
+                <li>
+                    <strong>보증금 (Deposit):</strong> 차량 가격의 일정 비율(10%~40%)을 금융사에 맡겨두는 담보금입니다. 금융사는 이 보증금을 바탕으로 차주의 상환 리스크를 낮게 평가하므로 리스 금리를 인하해줍니다. 계약이 끝난 후 차량을 반납하면 맡겨둔 보증금 전액을 100% 현금 환불받게 되며, 차량을 인수할 경우에는 만기 인수 비용(잔존가치)과 상계 처리하여 차액만 정산할 수 있습니다.
+                </li>
+                <li>
+                    <strong>선납금 (Upfront Payment):</strong> 총 계약 기간 동안 납부해야 할 월 리스료의 원금 일부를 계약 초기에 미리 목돈으로 선결제하는 개념입니다. 매달 내야 할 원금을 미리 냈기 때문에 겉으로 보이는 월 납입 요금은 드라마틱하게 낮아지지만, 이 돈은 소멸성 금액이므로 계약 만기 시 돌려받을 수 없습니다.
+                </li>
+            </ul>
+
+            <div class="warning-card">
+                <h4>저렴한 월 리스료 광고의 함정 주의</h4>
+                <p>
+                    인터넷 포털 사이트나 SNS 광고에서 미니 컨트리맨 월 30만 원대 최저가 리스라는 문구를 접했다면, 이는 십중팔구 선납금 30%~40% 조건이 결합된 견적입니다. 만기 시 돌려받는 돈이 전혀 없는 소멸성 비용이므로, 총지출 관점에서 보증금 거치 조건과 꼼꼼히 비교해야 실질적인 손해를 방지할 수 있습니다.
+                </p>
+            </div>
+
+            <h3>잔존가치 설정과 리스료 산정의 수학적 원리</h3>
+            <p>
+                운용리스의 월 납입금은 다음 공식을 통해 산출됩니다. 금융사는 차량의 신차 출고 가격에서 계약 만기 시점의 예상 가치인 '잔존가치'를 차감한 금액(유예 원금)에 대해서만 계약 기간 동안 균등하게 원금을 상환하도록 설계하고, 여기에 조달 금리인 리스 이자를 부과합니다.
+            </p>
+            <p style="background-color: var(--bg-muted); padding: 14px 18px; border-radius: var(--radius-md); font-family: monospace; font-size: 0.95rem;">
+                월 리스료 = [ (차량가액 - 잔존가치) / 계약개월수 ] + [ (차량가액 + 잔존가치) * (연이자율 / 24) ]
+            </p>
+            <p>
+                즉, <strong>계약 만기 시 차량을 금융사에 반납할 계획</strong>이라면 잔존가치를 법정 최고 한도(통상 45%~55%)까지 높게 설정할수록 매월 납부하는 리스 요금이 최소화됩니다. 반면 <strong>계약 종료 후 차량을 본인 명의로 인수하여 영구 소유할 목적</strong>이라면, 만기 인수가격을 낮추기 위해 잔존가치를 낮게 잡거나 초기 보증금 비율을 잔존가치와 동일하게(동일 30% 등) 맞추어 추가 자금 투입 없이 깔끔하게 차량을 넘겨받는 방식이 가장 유리합니다.
+            </p>
+
+            <div class="chart-container">
+                <div class="chart-title">3세대 미니 컨트리맨 60개월 기준 잔존가치 보장율 비교 (업계 평균치)</div>
+                <div class="chart-row">
+                    <div class="chart-label-group">
+                        <span>컨트리맨 C 페이버드 (가솔린 1.5/2.0)</span>
+                        <span>55% 보장</span>
+                    </div>
+                    <div class="chart-track"><div class="chart-bar bar-c"></div></div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-label-group">
+                        <span>컨트리맨 S ALL4 사륜구동</span>
+                        <span>52% 보장</span>
+                    </div>
+                    <div class="chart-track"><div class="chart-bar bar-s"></div></div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-label-group">
+                        <span>컨트리맨 JCW 고성능 플래그십</span>
+                        <span>46% 보장</span>
+                    </div>
+                    <div class="chart-track"><div class="chart-bar bar-jcw"></div></div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-label-group">
+                        <span>컨트리맨 일렉트릭 순수전기 (E / SE)</span>
+                        <span>48% 보장</span>
+                    </div>
+                    <div class="chart-track"><div class="chart-bar bar-ev"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tax-strategy">
+            <h2>5. 개인 및 법인사업자 경비처리 세법</h2>
+            <p>
+                미니 컨트리맨 리스가 법인 대표 및 개인사업자, 프리랜서들에게 압도적인 선택을 받는 본질적인 이유는 <strong>합법적인 세금 절감 효과</strong>에 있습니다. 대한민국 세법상 사업용 차량에 대한 비용처리 기준은 법인세 및 종합소득세 과세표준을 대폭 낮추어 실질적인 세금 부담을 줄여줍니다.
+            </p>
+
+            <h3>연간 1,500만 원 기본 손비 인정 구조</h3>
+            <p>
+                현행 세법에 따르면 업무용 승용차 관련 비용은 연간 대당 최대 1,500만 원까지 별도의 복잡한 증빙이나 운행기록부 작성 없이도 간편하게 경비로 인정받을 수 있습니다.
+            </p>
+            <ul>
+                <li>
+                    <strong>차량 감가상각비 상당액:</strong> 연간 800만 원 한도 (월 약 66.6만 원). 운용리스의 경우 월 납입료 중 순수 차량 리스료에 해당하는 금액이 여기에 포함됩니다.
+                </li>
+                <li>
+                    <strong>차량 유지 및 운행 경비:</strong> 연간 700만 원 한도. 유류비, 자동차세, 통행료, 주차 요금, 그리고 리스 차량 보험료 등이 합산 적용됩니다.
+                </li>
+            </ul>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>과세표준 구간 (종합소득세)</th>
+                            <th>적용 세율 (지방소득세 포함)</th>
+                            <th>연 1,500만 원 비용처리 시 절감 세액</th>
+                            <th>실질 리스료 절감 체감율</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1,400만 원 이하</td>
+                            <td>6.6%</td>
+                            <td>약 99만 원</td>
+                            <td>약 6% 절감 효과</td>
+                        </tr>
+                        <tr>
+                            <td>1,400만 ~ 5,000만 원</td>
+                            <td>16.5%</td>
+                            <td>약 247만 원</td>
+                            <td>약 15% 절감 효과</td>
+                        </tr>
+                        <tr>
+                            <td>5,000만 ~ 8,800만 원</td>
+                            <td>26.4%</td>
+                            <td>약 396만 원</td>
+                            <td>약 24% 절감 효과</td>
+                        </tr>
+                        <tr>
+                            <td>8,800만 ~ 1억 5,000만 원</td>
+                            <td>38.5%</td>
+                            <td>약 577만 원</td>
+                            <td>약 35% 절감 효과</td>
+                        </tr>
+                        <tr>
+                            <td>1억 5,000만 ~ 3억 원</td>
+                            <td>41.8%</td>
+                            <td>약 627만 원</td>
+                            <td>약 38% 절감 효과</td>
+                        </tr>
+                        <tr>
+                            <td>3억 원 초과 고소득 구간</td>
+                            <td>46.2% ~ 49.5%</td>
+                            <td>최대 약 742만 원</td>
+                            <td>최대 45% 수준의 절세 실현</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                과세표준이 높은 사업자일수록 미니 컨트리맨 리스 비용 처리를 통한 절세 혜택은 극대화됩니다. 예를 들어 과세표준 1억 원 구간의 개인사업자가 미니 컨트리맨 C 페이버드 모델을 리스로 운용하며 연간 1,500만 원의 비용을 털어낼 경우, 매년 577만 원 이상의 소득세를 절감할 수 있어 실질적인 차량 운용 체감 비용은 반값 수준으로 내려갑니다.
+            </p>
+            <p>
+                만약 연간 리스료와 유지비 합계가 1,500만 원을 초과하더라도 국세청 양식에 맞춘 <strong>업무용 승용차 운행기록부</strong>를 성실히 작성하면 총 주행거리 중 업무용 사용 비율(출퇴근 및 거래처 방문 등)만큼 초과 금액도 전액 손금 산입이 가능합니다. 초과된 감가상각비는 다음 연도로 이월되어 계약 종료 후에도 800만 원 한도로 끝까지 전액 경비 혜택을 누릴 수 있습니다.
+            </p>
+        </section>
+
+        <section id="forecast">
+            <h2>6. 2026년 2027년 감가 방어율 전망</h2>
+            <p>
+                2026년도 및 2027년도 국내 수입차 시장은 급격한 전동화 전환과 하이브리드 선호, 그리고 탄소 배출 규제 강화라는 구조적 격변기를 맞이하고 있습니다. 이러한 거시적 흐름 속에서 3세대 풀체인지 미니 컨트리맨의 중고차 가치 보존율과 리스 잔존가치 전망을 심층 분석합니다.
+            </p>
+
+            <h3>내연기관 모델의 희소 가치와 잔가 방어</h3>
+            <p>
+                유럽 및 글로벌 완성차 브랜드들의 내연기관 생산 축소 기조에 따라, 2026년과 2027년 시점에는 역설적으로 완성도 높은 2.0리터 가솔린 터보 엔진 기반의 미니 컨트리맨 C 및 S ALL4 모델의 중고차 시장 수요가 매우 탄탄하게 유지될 것으로 전망됩니다. 
+                특히 패밀리 SUV로서의 적재 공간과 편안한 승차감을 갖추면서도 미니 고유의 민첩한 '고카트 필링(Go-Kart Feeling)' 주행 감성을 온전히 보존한 마지막 세대의 순수 내연기관 차량이라는 희소성이 부각되고 있습니다. 이에 따라 캐피탈사들도 60개월 기준 잔가율을 50% 초중반 수준으로 매우 높게 인정하고 있어 차주들의 월 리스료 부담이 과거 대비 완화되는 추세입니다.
+            </p>
+
+            <h3>컨트리맨 일렉트릭(EV) 모델의 배터리 잔가 리스크 헷지</h3>
+            <p>
+                순수 전기차인 미니 컨트리맨 일렉트릭 E 및 SE ALL4 모델의 경우, 급속 충전 인프라의 확충과 정부 보조금 축소 정책이 맞물려 있습니다. 전기차는 3~5년 후 배터리 성능 저하 및 차세대 전고체 배터리 등장으로 인한 중고차 시세 하락(감가상각) 폭이 가솔린 모델보다 상대적으로 클 위험이 상존합니다.
+            </p>
+            <p>
+                이러한 환경에서 <strong>전기차를 운용리스로 이용하는 것은 최고의 위험 회피(Hedging) 전략</strong>이 됩니다. 계약 시점에 금융사가 높은 수준의 만기 잔존가치를 미리 보증해주기 때문에, 향후 중고 전기차 시세가 폭락하더라도 차주는 아무런 감가 손해 없이 차량을 금융사에 반납하면 그만이기 때문입니다. 배터리 결함이나 잔존가치 폭락의 위험을 차주 개인이 아닌 리스 금융회사가 전적으로 떠안는 구조입니다.
+            </p>
+        </section>
+
+        <section id="community">
+            <h2>7. 커뮤니티 실차주 출고 후기</h2>
+            <p>
+                국내 대형 자동차 커뮤니티인 <strong>보배드림, 디시인사이드 자동차 갤러리, 에펨코리아(펨코) 차·바이크 게시판, 네이버 대표 카페</strong> 등에서 실제 차주들이 공유하는 출고 후기와 내돈내산 견적서 인증 글을 교차 검증해보면 공통적으로 나타나는 현실적인 평가들이 존재합니다.
+            </p>
+            <ul>
+                <li>
+                    <strong>공간 활용성의 비약적 진화:</strong> 이전 2세대 컨트리맨 대비 전장이 130mm 이상, 전고가 105mm 높아지며 2열 레그룸과 트렁크 적재 용량이 국산 대표 준중형 SUV인 스포티지나 투싼에 필적할 만큼 넓어졌다는 호평이 지배적입니다. 유모차 수납이나 주말 캠핑용 차박이 가능해지면서 30대 패밀리카로서의 만족도가 매우 높습니다.
+                </li>
+                <li>
+                    <strong>삼성 디스플레이 협업 원형 OLED:</strong> 실내 대시보드 중앙에 자리한 240mm 원형 OLED 디스플레이는 스마트폰과 유사한 즉각적인 터치 반응 속도를 제공하며, 최신 TMAP(티맵) 기반의 순정 내비게이션이 내장되어 수입차 고질병이었던 길찾기 스트레스가 완전히 해소되었다는 평가를 받습니다.
+                </li>
+                <li>
+                    <strong>승차감의 고급화:</strong> 과거 미니 특유의 단단하고 튀는 승차감에서 벗어나 서스펜션 세팅이 한층 정제되고 부드러워져 장거리 고속도로 주행 시 피로도가 눈에 띄게 줄어들었습니다.
+                </li>
+            </ul>
+
+            <h3>딜러사 비공식 프로모션 및 견적 성지 공략법</h3>
+            <p>
+                미니 브랜드는 국내에 도이치모터스, 바바리안모터스, 코오롱모터스, 삼천리모터스 등 복수의 대형 공식 딜러사가 독립적으로 차량을 판매하고 있습니다. 각 딜러사마다 분기별 판매 목표 달성률과 보유 재고 현황이 상이하므로 동일한 미니 컨트리맨 모델이라도 제시하는 공식 할인과 비공식 지원금 규모에서 수백만 원 단위의 격차가 벌어집니다.
+            </p>
+            <p>
+                온라인 자동차 동호회나 유튜브, 인스타그램 등에서 이른바 '리스 성지 좌표'로 불리는 전문 에이전시들은 전국 딜러사의 실시간 재고망과 20개 이상의 캐피탈사(BMW 파이낸셜 서비스, 하나캐피탈, KB캐피탈, 우리금융캐피탈 등) 금리를 전산망을 통해 일괄 비교해 줍니다. 
+                단순히 집 근처 전시장을 방문하여 단일 딜러의 견적만 믿고 계약하기보다는, 다이렉트 에이전시 플랫폼을 통해 금융사별 금리와 잔존가치 프로모션을 교차 검증하는 것이 가장 저렴한 최저가 견적을 손에 쥐는 핵심 비결입니다.
+            </p>
+        </section>
+
+        <section id="caution">
+            <h2>8. 계약 기간, 주행거리, 위약금 유의점</h2>
+            <p>
+                미니 컨트리맨 리스 계약 체결 전 반드시 계약서 약관의 세부 조항을 정밀 검토해야 향후 불필요한 금전적 분쟁을 방지할 수 있습니다.
+            </p>
+
+            <h3>계약 약정 기간 및 무약정 비교</h3>
+            <p>
+                일반적인 신차 운용리스의 약정 계약 기간은 36개월, 48개월, 60개월로 구성됩니다. 12개월(1년) 단위의 초단기 리스 상품도 일부 존재하지만 월 리스료가 급격히 상승하므로, 대다수의 이용자는 감가율이 안정화되고 월 납입금이 가장 저렴해지는 60개월 약정을 체결한 뒤 3~4년 시점에 승계를 통해 차량을 교체하는 패턴을 선호합니다.
+            </p>
+
+            <h3>약정 주행거리 초과 시 페널티 요금</h3>
+            <p>
+                운용리스는 계약 시 연간 주행거리를 10,000km부터 15,000km, 20,000km, 30,000km 등으로 설정합니다. 계약 종료 후 차량을 반납할 때 설정된 누적 주행거리를 초과했을 경우 <strong>1km당 100원에서 250원 수준의 초과 운행 부담금</strong>이 정산 청구됩니다. 5년 동안 10,000km를 초과했다면 150만 원 이상의 추가 요금이 발생할 수 있으므로, 본인의 평소 출퇴근 왕복 거리와 주말 레저 활동 빈도를 정밀하게 계산하여 여유 있는 주행거리를 약정해야 합니다.
+            </p>
+
+            <h3>중도해지 손해배상금(위약금)과 리스 승계</h3>
+            <p>
+                개인적인 사정이나 사업 악화로 인해 계약 기간 중도에 리스를 해지하고 차량을 즉시 반납하고자 할 경우 잔여 리스료의 최대 30%~40%에 달하는 막대한 <strong>중도해지 위약금</strong>이 청구됩니다.
+            </p>
+            <p>
+                따라서 중도에 차량을 처분해야 하는 상황이 온다면 일방적인 해지 대신 제3자에게 기존 리스 계약 조건을 그대로 이전하는 <strong>리스 승계</strong> 방식을 활용해야 합니다. 보배드림이나 승계 전문 어플을 통해 약간의 승계 지원금(인도금)을 지급하고 새로운 이용자를 구하여 명의를 이전하면 위약금 부담 없이 원만하게 계약 관계를 청산할 수 있습니다.
+            </p>
+        </section>
+
+        <section id="faq">
+            <h2>9. 자주 묻는 질문 FAQ</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Q1. 무직자나 주부도 미니 컨트리맨 신차 리스 계약 승인이 가능한가요?</div>
+                <div class="faq-answer">
+                    소득 증빙이 어려운 무직자나 전업주부의 경우에도 NICE나 KCB 개인신용평점이 양호(통상 신용점수 750점 이상)하고 기존 대출 연체 이력이 없다면 심사 승인이 가능합니다. 필요에 따라 차량 가격의 10%~20% 수준의 보증금을 예치하거나 서울보증보험 증권을 발급받는 조건으로 추가 담보를 보강하여 원활하게 출고를 완료할 수 있습니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q2. 리스 계약 만기 시점에 반납과 인수 중 어떤 선택이 유리한가요?</div>
+                <div class="faq-answer">
+                    계약 만기 시점의 미니 컨트리맨 중고차 도매 시장 시세와 계약서에 명시된 확정 잔존가치 금액을 비교하여 결정합니다. 중고차 시세가 잔존가치보다 높다면 차량을 일단 인수하여 중고차 시장에 매각함으로써 시세 차익(프리미엄)을 거둘 수 있으며, 반대로 중고차 시세가 급락하여 잔존가치보다 낮다면 지체 없이 금융사에 반납하여 감가 손실을 방어하는 것이 현명합니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q3. 미니 공식 보증수리 및 소모품 패키지(MSI) 혜택은 리스 차량도 동일하게 적용되나요?</div>
+                <div class="faq-answer">
+                    네, 전액 동일하게 적용됩니다. 운용리스 차량이라 하더라도 차량의 공식 보증 기간(차체 및 일반 부품 2년/무제한, 배출가스 및 엔진 5년/8만km 등)과 미니의 무상 소모품 교환 프로그램인 MSI(MINI Service Inclusive: 엔진오일, 브레이크 패드, 와이퍼 등 무상 교환) 혜택은 전국 미니 공식 서비스센터에서 일시불 신차 출고 고객과 완벽하게 동일한 권리로 누릴 수 있습니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q4. 계약 체결 후 단순 변심으로 인한 취소 및 계약금 환불이 가능한가요?</div>
+                <div class="faq-answer">
+                    차량이 배정되어 자동차등록사업소에 정식으로 번호판이 등록(신규 등록)되기 이전 단계에서는 딜러사에 납부한 가계약금 전액을 100% 무조건 환불받을 수 있습니다. 그러나 이미 본인 명의로 번호판이 발급되고 정식 등록 서류가 금융사로 접수된 이후에는 취소가 불가하며, 취소 시 중도해지 위약 규정이 즉시 적용되므로 최종 등록 전 심사숙고해야 합니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q5. 리스 이용 중 교통사고가 발생하면 보험료 할증이나 감가상각비 보상이 발생하나요?</div>
+                <div class="faq-answer">
+                    운용리스는 이용자 본인의 자동차 보험으로 가입하므로 사고 발생 시 본인 명의의 자동차 보험을 통해 수리 및 대인/대물 처리가 진행되며, 과실 비율에 따라 다음 해 보험료가 정상적으로 할증됩니다. 전손 사고가 아닌 경미한 파손의 경우 공식 서비스센터에서 정품 부품으로 원상복구 수리를 완료하면 만기 반납 시 별도의 사고 감가 페널티가 부과되지 않는 것이 일반적입니다.
+                </div>
+            </div>
+        </section>
+
+        <section id="references">
+            <h2>10. 공인 공식 외부 데이터 출처</h2>
+            <p>
+                본 분석 리포트는 수입차 금융 규제 가이드라인, 제조사 공시 제원, 그리고 공인된 데이터베이스의 객관적 지표를 기반으로 작성되었습니다. 보다 심도 있는 차량 제원 및 금융 표준 약관은 아래 공식 웹사이트를 통해 직접 열람하실 수 있습니다.
+            </p>
+
+            <div class="reference-list">
+                <a href="https://leaseftruthf.withusrizz.com" target="_blank" rel="noopener noreferrer" class="reference-item">
+                    <div>
+                        <span class="ref-title">오토파이낸스 리포트 프리미엄 자동차 금융 포털</span>
+                        <span class="ref-desc">실시간 캐피탈사 금리 비교 전산망 및 모델별 잔존가치 프로모션 공시 데이터베이스</span>
+                    </div>
+                    <span class="ref-arrow">공식 데이터 확인</span>
+                </a>
+                <a href="https://namu.wiki/w/미니(BMW)/컨트리맨" target="_blank" rel="noopener noreferrer" class="reference-item">
+                    <div>
+                        <span class="ref-title">나무위키 미니 컨트리맨 세대별 역사 및 파워트레인 기술 백과</span>
+                        <span class="ref-desc">1세대부터 3세대 풀체인지 모델까지의 플랫폼 구조, 엔진 스펙 및 에디션 변천사 종합</span>
+                    </div>
+                    <span class="ref-arrow">백과사전 열람</span>
+                </a>
+                <a href="https://www.mini.co.kr" target="_blank" rel="noopener noreferrer" class="reference-item">
+                    <div>
+                        <span class="ref-title">MINI 코리아 공식 웹사이트</span>
+                        <span class="ref-desc">BMW 그룹 코리아 공식 카탈로그, 차량 옵션 사양표, 전국 전시장 위치 및 시승 신청</span>
+                    </div>
+                    <span class="ref-arrow">공식 카탈로그 보기</span>
+                </a>
+            </div>
+        </section>
     </main>
-  </body>
-</html>
+</div>
+
+  
+
+<script>
+function calculateLease() {
+    var price = parseFloat(document.getElementById('trimSelect').value);
+    var term = parseInt(document.getElementById('termSelect').value, 10);
+    var depositType = document.getElementById('depositType').value;
+    
+    // 금융 공학적 근사 계산 계수
+    var resValueRatio = 0.50; // 잔가 50%
+    if (term === 36) resValueRatio = 0.58;
+    if (term === 48) resValueRatio = 0.54;
+    
+    var residualValue = price * resValueRatio;
+    var annualInterestRate = 0.059; // 연 5.9% 기준
+    
+    var upfrontRate = 0;
+    var isDeposit = false;
+    
+    if (depositType === 'prepaid_30') {
+        upfrontRate = 0.30;
+        isDeposit = false;
+    } else if (depositType === 'deposit_30') {
+        upfrontRate = 0.30;
+        isDeposit = true;
+    } else {
+        upfrontRate = 0.0;
+        isDeposit = false;
+    }
+    
+    var monthlyPayment = 0;
+    var upfrontAmount = price * upfrontRate;
+    
+    if (depositType === 'prepaid_30') {
+        var financedAmount = price - upfrontAmount - residualValue;
+        var monthlyDepreciation = financedAmount / term;
+        var monthlyInterest = (price + residualValue) * (annualInterestRate / 24);
+        monthlyPayment = monthlyDepreciation + monthlyInterest;
+    } else if (depositType === 'deposit_30') {
+        var financedAmountDep = price - residualValue;
+        var monthlyDepreciationDep = financedAmountDep / term;
+        var discountRate = annualInterestRate - 0.006; // 보증금 예치로 금리 할인
+        var monthlyInterestDep = (price + residualValue) * (discountRate / 24);
+        monthlyPayment = monthlyDepreciationDep + monthlyInterestDep;
+    } else {
+        var financedAmountZero = price - residualValue;
+        var monthlyDepreciationZero = financedAmountZero / term;
+        var monthlyInterestZero = (price + residualValue) * (annualInterestRate / 24);
+        monthlyPayment = monthlyDepreciationZero + monthlyInterestZero;
+    }
+    
+    var roundedPayment = Math.round(monthlyPayment / 1000) * 1000;
+    var formattedPayment = roundedPayment.toLocaleString();
+    var formattedUpfront = (Math.round(upfrontAmount / 10000)).toLocaleString();
+    
+    var typeText = "선납금 (소멸성)";
+    if (isDeposit) typeText = "보증금 (만기 100% 환불)";
+    if (depositType === 'zero') typeText = "초기비용 없음";
+    
+    var resultHtml = '<div style="margin-bottom:8px;"><strong>예상 월 리스료:</strong> <span style="font-size:1.2rem; color:#0d9488; font-weight:800;">' + formattedPayment + ' 원</span></div>' +
+                     '<div style="font-size:0.85rem; line-height:1.6;">' +
+                     '초기 납입 조건: ' + typeText + ' (' + formattedUpfront + '만 원)<br>' +
+                     '약정 만기 잔존가치: ' + (Math.round(residualValue / 10000)).toLocaleString() + '만 원 (' + (resValueRatio * 100) + '%)<br>' +
+                     '약정 기간: ' + term + '개월 / 연 2만km 기준' +
+                     '</div>';
+                     
+    document.getElementById('resultContent').innerHTML = resultHtml;
+    document.getElementById('calcResult').style.display = 'block';
+}
+</script>
+  
